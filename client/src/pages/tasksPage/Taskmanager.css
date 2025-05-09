@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Container */
+.task-container {
+  @apply min-h-screen bg-gradient-to-b  px-4 py-6 sm:px-8 max-w-7xl mx-auto;
+}
+
+/* Header */
+.task-header {
+  @apply flex flex-col sm:flex-row justify-between items-center sm:items-center mb-6 gap-4;
+}
+
+.task-title {
+  @apply text-3xl font-semibold;
+}
+
+.task-controls {
+  @apply flex flex-col sm:flex-row gap-3 w-full sm:w-auto;
+}
+
+.task-add-button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition w-full sm:w-auto;
+}
+
+.task-filter-select {
+  @apply border border-gray-300 px-4 py-2 rounded-md text-gray-700 w-full sm:w-auto hover:cursor-pointer;
+}
+
+/* Search */
+.task-search-box {
+  @apply w-[60%] text-center;
+}
+
+.task-search-input {
+  @apply w-full sm:max-w-md px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+/* Grid */
+.task-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12;
+}
+
+/* Card */
+.task-card {
+  @apply bg-white  rounded-lg p-4;
+  box-shadow: 1px 1px 2px 2px rgb(61, 61, 61);
+}
+
+.task-card-header {
+  @apply flex justify-between items-start;
+}
+
+.task-card-title {
+  @apply text-xl font-semibold;
+}
+
+.task-badge-incomplete {
+  @apply bg-red-100 text-red-600 text-sm px-2 py-1 rounded-md;
+}
+.task-badge-complete {
+  @apply bg-green-100 text-green-600 text-sm px-2 py-1 rounded-md;
+}
+
+.task-desc {
+  @apply text-gray-600 mt-2;
+}
+
+.task-card-footer {
+  @apply flex justify-between items-center mt-4 text-sm text-gray-500 flex-wrap gap-y-2;
+}
+
+.task-date {
+  @apply text-sm;
+}
+
+.task-icons {
+  @apply flex gap-3 text-lg text-gray-600;
+}
+
+.task-icon {
+  @apply cursor-pointer transition;
+}
+
+.task-icon.edit:hover {
+  @apply text-blue-600;
+}
+
+.task-icon.delete:hover {
+  @apply text-red-600;
+}
+
+.task-icon.complete:hover {
+  @apply text-green-600;
+}

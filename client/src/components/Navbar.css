@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+header {
+  @apply py-4 px-6 md:px-0 bg-white;
+  z-index: 5;
+}
+header .container {
+  @apply max-w-7xl mx-auto flex justify-between items-center h-full;
+}
+
+.logo-part {
+  @apply flex items-center h-full;
+}
+.logo-part h1 {
+  @apply text-lg font-semibold text-gray-800;
+}
+li {
+  @apply h-full;
+}
+.list-item {
+  @apply text-gray-600 hover:text-red-500 font-bold hover:h-full transition-all duration-100   h-full block p-4;
+}
+
+li .active {
+  @apply bg-gray-100 rounded-lg;
+}
