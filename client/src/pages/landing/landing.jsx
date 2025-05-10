@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router";
-import ToDoHome from "../../assets/ToDoHome.png";
+import TodoHome from "../../assets/ToDoHome.png";
 import GetUser from "../../Utils/GetUser";
 function Landing() {
   const user = GetUser();
