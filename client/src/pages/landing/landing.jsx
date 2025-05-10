@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router";
-import TodoHome from "../../assets/ToDoHome.png";
+import TodoHome from "../../assets/TodoHome.png";
 import GetUser from "../../Utils/GetUser";
 function Landing() {
   const user = GetUser();
@@ -38,7 +38,7 @@ function Landing() {
             </div>
             <div className="flex justify-center md:justify-end">
               <img
-                src={ToDoHome}
+                src={TodoHome}
                 alt="DoDo task management illustration"
                 className="max-w-full h-auto rounded-lg shadow-xl bg-transparent"
               />
